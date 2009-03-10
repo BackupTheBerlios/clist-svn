@@ -1,6 +1,6 @@
 /*============================================================================*\
  *clist Assist Functions/Classes.                                             *
- *Copyright (C) 2007 Kevin P. Barry (ta0kira)                                 *
+ *Copyright (C) 2009 Kevin P. Barry (ta0kira)                                 *
  *                                                                            *
  *This library is free software; you can redistribute it and/or modify it     *
  *under the terms of the GNU Lesser General Public License as published by the*
@@ -24,7 +24,7 @@
 \*============================================================================*/
 
 //CList_________________________________________________________________________
-//(C) 2003-2005,2007 Kevin P. Barry
+//(C) 2003-2005,2007,2009 Kevin P. Barry
 
 //Header Section################################################################
 #ifndef list_assist___HPP
@@ -176,7 +176,7 @@ clist_sigma(const clist <Type>&, int = first, int = last + 1);
 
 template <class Type, class Function1>
     typename FUNCTION_1 <Function1> ::NO_REF_RETURN
-clist_f_sigma(const clist <Type>&, Function1, int = first, int = last + 1);
+f_clist_sigma(const clist <Type>&, Function1, int = first, int = last + 1);
 //Calculate sum of all elements
 
 template <class Type1, class Type2>
@@ -782,7 +782,7 @@ clist_sigma(const clist <Type> &lList, int sStart, int eEnd)
 }
 
 template <class Type, class Function1> typename FUNCTION_1 <Function1> ::NO_REF_RETURN
-clist_f_sigma(const clist <Type> &lList, Function1 fFunction, int sStart, int eEnd)
+f_clist_sigma(const clist <Type> &lList, Function1 fFunction, int sStart, int eEnd)
 //Calculate sum of all elements
 {
   int END = lList.section_size(sStart, eEnd) + sStart;
