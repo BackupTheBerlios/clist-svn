@@ -47,6 +47,9 @@
             <li>
               <a href="#DR">Data Retrieval.</a>
             </li>
+            <li>
+              <a href="#GP">Group Processing.</a>
+            </li>
           </ol>
         </div>
         <br>
@@ -812,6 +815,21 @@
                           </li>
                         </ul>
                       </div>
+                    </li>
+                  </ul>
+                </div>
+                <br>
+              </li>
+              <li>
+                <strong><a name="GP">Group Processing.</a></strong> These functions allow iterated processing of the list's elements using a functor. Each element is passed to the functor sequentially across the optional range, then the same list is returned. <u>f_set_group</u> allows the functor to modify the elements if the elements aren't qualified with <u>const</u>. <u>f_check_group</u> doesn't allow modification of the elements; it's primarily intended for use with an object that will modify its own state as a result of the list elements. This can also be used for displaying the elements. <br>
+                <br>
+                <div>
+                  <ul>
+                    <li>
+                      <strong>f_set_group(functor)</strong>
+                    </li>
+                    <li>
+                      <strong>f_check_group(functor)</strong>
                     </li>
                   </ul>
                 </div>
@@ -4568,9 +4586,9 @@
     <hr>
     <br>
     <div align="justify" style="font-size:larger;"> Please take a look at the example programs for more information. This tutorial needs to be rewritten in clearer language; however, everything is up to date.  If you require additional support or have suggestions, please contact me at <a href="mailto:ta0kira@users.berlios.de">ta0kira@users.berlios.de</a>. <br>
-    <h2 align="center"><b>
+    <h3 align="center"><b>
       <a href="http://developer.berlios.de/projects/clist/">Download</a>
-    </h2>
+    </h3>
       <hr>
       <div>
         <table style="width: 100%; table-layout: fixed;">

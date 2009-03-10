@@ -290,7 +290,7 @@ public:
     //Set a group of elements using a functor
 
     template <class Function1>
-        clist
+        const clist
     &f_check_group(Function1, int = first, int = last + 1) const;
     //Checks a group of elements using a functor
     //--------------------------------------------------------------------------
@@ -2032,7 +2032,7 @@ private:
   return *this;
   }
 
-  template <class Type> template <class Function1> clist <Type>
+  template <class Type> template <class Function1> const clist <Type>
   &clist <Type> ::f_check_group(Function1 fFunction, int sStart, int sStop) const
     //Checks a group of elements using a functor
   {
